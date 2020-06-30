@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+   
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background:url(../images/bg05.jpg) fixed bottom/cover;
+}
+
+h3{
+    font-size: 35px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#page-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 車頭 */
+#zen-intro{
+    width: 800px;
+    height: 500px;
+    border-top: 1px solid rgb(10, 10, 104);    
+    border-bottom: 1px solid rgb(10, 10, 104);   
+    border-radius: 100% 0% 0% 20%;
+    flex-shrink: 0;
+    position: relative;
+    top: 400px;
+    left: -562px;
+    background:rgba(255, 255, 255,0.9) ;
+
+}
+
+#zen-intro::before{
+    content:'';
+    width: 100px;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    border: 100px solid rgb(10, 10, 104);
+    border-radius: 100% 10% 5% 10%;
+}
+
+#banner{
+    position: absolute;
+    display: flex;    
+    flex-wrap: wrap;
+}
+
+#banner>h1{ 
+    font-family: 'Monoton', cursive,Arial, Helvetica, sans-serif;
+    font-size: 55px;    
+    letter-spacing: 5px;
+    word-spacing: 25px; 
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    width: 800px;
+}
+
+#banner>h2{
+    font-family: 'Monoton', cursive,Arial, Helvetica, sans-serif;
+    font-size: 18px;    
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    /* color: white; */
+    position: absolute;
+    top: 420px;
+    left: 200px;
+    width: 500px;
+}
+
+/* 第一節車廂 */
+#zen-summary{  
+    border-right: 1px solid rgb(10, 10, 104);
+    border-top:1px solid rgb(10, 10, 104);
+    border-bottom: 1px solid rgb(10, 10, 104);
+    border-radius: 0 10px 10px 0;
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: -1px;
+    left: 800px;
+    line-height: 25px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background:rgba(255, 255, 255,0.9) ;
+}
+
+#zen-summary p:nth-child(1){
+    position: absolute;
+    bottom: 15%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#zen-summary p:nth-child(2){
+    position: absolute;
+    bottom: 5%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* 第二節 */
+#zen-preamble{
+    border: 1px solid rgb(10, 10, 104);
+    border-radius: 10px;
+    height: 500px;
+    width: 300px;
+    position: absolute;   
+    left:1100px;
+    color: aliceblue;
+    text-shadow: blanchedalmond 0.2rem 0.2rem 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+#zen-preamble::before{
+    content: '';    
+    background: url('../images/2019014.jpg') no-repeat top/cover;
+    filter: blur(2px);
+    height: 500px;
+    width: 300px;
+    position: absolute;
+}
+
+#zen-preamble:hover::before {    
+    background: rgb(255, 187, 166);
+}
+
+#zen-preamble h3,#zen-preamble p{
+    z-index: 11;
+}
+
+#zen-preamble h3, #zen-explanation h3, #zen-participation h3,#zen-benefits h3, #zen-requirements h3{
+    line-height: 50px;
+}
+
+#zen-preamble p, #zen-explanation p, #zen-participation p, #zen-benefits p, #zen-requirements p,#design-selection ul,#design-archives ul,#zen-resources ul{
+    display: none;
+}
+
+#zen-preamble:hover p,#zen-explanation:hover p, #zen-participation:hover p{
+    display: inline-block;
+    color: black;
+}
+
+#zen-preamble:hover h3,#zen-explanation:hover h3, #zen-participation:hover h3, #zen-benefits:hover h3,#zen-requirements:hover h3, #design-selection:hover h3, #design-selection:hover h3::after, #design-archives:hover h3, #design-archives:hover h3::after, #zen-resources:hover h3, #zen-resources:hover h3::after{
+    display: none;
+}
+
+/* 第三節車廂 */
+#zen-explanation{  
+    background: url(../images/201916.jpg);
+    filter: sepia(0.8);
+    border: 1px solid rgb(10, 10, 104);
+    border-radius: 10px;
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    left:1504px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 500px; */
+    padding-left: 1rem;
+    transition: 1s;
+    text-shadow: burlywood 0.1rem 0.1rem 5px;
+}
+
+#zen-explanation:hover {
+    bottom:-25%;
+    background: rgba(191, 202, 130, 0.5);
+}
+
+/* 第四節 */
+#zen-participation{ 
+    background: url(../images/201918.png) no-repeat top right 0px/cover;
+    filter: contrast(150%);
+    border: 1px solid rgb(10, 10, 104);
+    border-radius: 10px;
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    left:1804px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 1.5s;
+}
+
+#zen-participation:hover{
+    background: rgb(202, 241, 170);
+}
+
+#zen-participation h3{
+    color: rgb(238, 152, 71);
+    text-shadow: black 0.2rem 0.2rem 3px;
+}
+
+/* 第五節 */
+#zen-benefits{    
+    background: url(../images/201921.jpg) no-repeat center/cover;    
+    border: 1px solid rgb(10, 10, 104);
+    border-radius: 10px;
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    left:2104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    animation: bbb 8s linear infinite forwards;
+}
+@keyframes bbb{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(720deg);
+    }
+}
+
+#zen-benefits h3{
+    color: bisque;
+    text-shadow: brown 0.2rem 0.2rem 3px;
+}
+
+#zen-benefits:hover p{
+    display: inline-block;
+    color: antiquewhite;
+    text-shadow: black 0.2rem 0.2rem 2px;
+}
+#zen-benefits:hover{   
+    animation: five5 1s infinite 0s ease alternate;
+    background: rgba(165, 42, 42,0.5);
+}
+
+@keyframes five5{
+   0%{
+       transform: rotate(5deg);
+   }
+   100%{
+    transform: rotate(-5deg);
+   } 
+}
+
+#zen-requirements{
+    border-radius: 10px;
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    top: 400px;
+    left:2404px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 1;
+    color: white;
+}
+
+#zen-requirements::before{
+    content: '';
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    background: url('../images/2019.jpg') no-repeat center/cover;
+    filter: opacity(0.9);
+    position: absolute;
+    border: 1px solid rgb(10, 10, 104);
+
+}
+#zen-requirements h3,#zen-requirements p{
+    z-index: 11;
+    color: rgb(6, 20, 46);
+
+}
+#zen-requirements h3{
+    color: brown;
+    text-shadow: aliceblue 0.2rem 0.2rem 2px;
+}
+
+#zen-requirements:hover::before{
+    background:rgb(250, 210, 135);
+}
+
+#zen-requirements:hover p{
+    display: inline-block;
+}
+
+/* 鐵軌 */
+#footer{
+    background: rgb(59, 8, 8);
+    border-radius: 10px;
+    height: 50px;
+    width: 3500px;
+    position: absolute;
+    top: 900px;
+    left:300px;    
+    display: flex;   
+    justify-content: space-evenly;
+    align-items: center;   
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#footer a{
+    color: gold;
+    letter-spacing: 3px;
+}
+/* 車尾 */
+#sidebar{
+    background:whitesmoke;
+    width: 800px;
+    height: 500px;
+    top: 400px;
+    left:3204px;
+    border: 1px solid rgb(10, 10, 104);
+    border-radius: 2% 100% 20% 2%;
+    flex-shrink: 0;
+    position: absolute;
+    padding-top: 4rem;
+    padding-left: 3rem;    
+}
+
+#design-selection{
+    position: absolute;
+    top: 400px;
+    left: 0;
+}
+
+#design-selection h3::after{
+    content: '';
+    width: 25px;
+    height: 40px;
+    background:whitesmoke;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#design-selection:hover ul{
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    left: 10px;
+    top: -85px;
+}
+
+#design-archives{
+    width: 200px;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
+
+#design-archives h3::after{
+    content: '';
+    width: 25px;
+    height: 40px;
+    background: whitesmoke;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+}
+
+#design-archives:hover ul{
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    left: 15px;
+    top: 0px;
+}
+
+#zen-resources{
+    width: 200px;
+    position: absolute;
+    top: 400px;
+    left: 280px;
+}
+
+#zen-resources h3::after{
+    content: '';
+    width: 25px;
+    height: 40px;
+    background: whitesmoke;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+#zen-resources:hover ul{
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    left: 15px;
+    top: -40px;
+}
+
+#sidebar::before{
+    content:'';
+    width: 100px;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    border: 100px solid rgb(10, 10, 104);
+    border-radius: 5% 100% 10% 5%;
+}
+
